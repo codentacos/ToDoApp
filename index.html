@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>To Do App</title>
+        <!-- <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css?family=Gayathri&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>To Do List</h1>
+        <div class="container">
+            <form action="index.html" method="POST">
+                <div class="new_task">
+                <!-- <label for="new_task">New Task</label> -->
+                <input type="text" id="new_task" placeholder="New task...">
+                <button type="button" id="add_task">Add</button>
+                </div>
+
+                <ul>
+                    <div class="task_list">
+                        <li><span>Task at hand...</span></li>
+                        <button type="button" id="complete_task">&#10004</button>
+                        <button type="button" id="delete_task">&#10005</button>
+                    </div>
+
+                    <div class="task_list">
+                            <li><span>Task at hand...</span></li>
+                            <button type="button" id="complete_task">&#10004</button>
+                            <button type="button" id="delete_task">&#10005</button>
+                    </div>
+                </ul>
+            </form>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>

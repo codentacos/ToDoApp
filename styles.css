@@ -1,0 +1,86 @@
+/* Base Styles */
+
+body {
+    font-family: "Gayathri";
+}
+
+/* Layout Styles */
+
+/* body, */
+.container,
+.new_task,
+.task_list {
+    display: grid;
+    
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.container {
+    border: 1px blue solid;
+    padding: 10px;
+    justify-items: center;
+    position: absolute;
+    left: 25%;
+    width: 50%;
+}
+
+form {
+    border: 1px solid red;
+    padding: 10px;
+    width: 100%;
+}
+
+
+.task_list,
+.new_task {
+    border: 1px solid black;
+    border-radius: 5px;
+    grid-template-columns: 1fr 30px 30px;
+    grid-gap: 10px;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.new_task {
+    border: none;
+    grid-template-columns: 1fr 30px;
+}
+
+.new_task input {
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+    height: 25px;
+    /* border-style: none; */
+}
+
+ul {
+    padding: 0 20px;
+}
+
+.task_list li,
+.new_task li {
+    list-style-type: none;
+    align-self: center;
+}
+
+#add_task {
+    border: none;
+    border-radius: 5px;
+    /* height: 30px; */
+    width: 40px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.task_list button {
+    border: none;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    font-weight: bold;
+}
